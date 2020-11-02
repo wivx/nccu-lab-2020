@@ -49,7 +49,7 @@ public class RecommendationCtl {
 		if (data.size() < 3) {
 			response.setData(data.subList(0, data.size()));
 		} else {
-			response.setData(data.subList(0, 3));
+			response.setData(data.subList(0, 5));
 		}
 
 		return new ResponseEntity<>(response, HttpStatus.OK);
